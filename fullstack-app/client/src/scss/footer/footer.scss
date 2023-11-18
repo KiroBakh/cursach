@@ -1,0 +1,79 @@
+.footer {
+  position: relative; 
+  margin-top: auto; 
+  z-index: 1; 
+
+
+  .subscribe {
+    margin-bottom: 10px;
+  }
+
+  .phone,
+  .email {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .phone {
+    margin-top: 3px;
+    a {
+      color: #00d0ff;
+      &:hover {
+        color: #00ff1e;
+      }
+    }
+  }
+
+  .email {
+    a {
+      color: #ff00a6;
+      &:hover {
+        color: #ff6f00;
+      }
+    }
+  }
+
+  .list {
+    padding-bottom: 5px;
+
+    a {
+      text-decoration: none;
+      &:hover {
+        background-color: #ffffff1b;
+        border-radius: 10%;
+      }
+    }
+  }
+
+  .zagolovok {
+    font-size: 18px;
+    min-width: 200px;
+  }
+
+  .hr-text {
+    margin-top: 4px;
+    max-width: 60px;
+    margin-bottom: 5px;
+    top: 100px;
+
+    &.zagolovok-hr {
+      border-bottom: 1.5px solid #00ff1e;
+    }
+
+    &.contacts-hr {
+      min-width: 66px;
+      border-bottom: 1.5px solid #00d0ff;
+    }
+
+    &.links-hr {
+      min-width: 74px;
+      border-bottom: 1.5px solid #ae00ff;
+    }
+
+    &.subscribe-hr {
+      min-width: 85px;
+      border-bottom: 1.5px solid #ffff00;
+    }
+  }
+}

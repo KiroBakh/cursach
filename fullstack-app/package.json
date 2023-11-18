@@ -1,0 +1,21 @@
+{
+  "name": "fullstack-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd server  && npm start",
+    "start-client": "cd client && npm start",
+    "start-dev": "concurrently \"npm run start\" \"npm run start-client\"",
+    "sass": "cd client && gulp sass",
+    "watch": "cd client && gulp watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.1",
+    "concurrently": "^8.2.2",
+    "prop-types": "^15.8.1"
+  }
+}

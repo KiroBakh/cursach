@@ -1,0 +1,142 @@
+.main-container {
+  background: url("https://abrakadabra.fun/uploads/posts/2022-02/1645798904_7-abrakadabra-fun-p-krasivii-voennii-fon-8.jpg");
+  min-height: 85vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+}
+
+.containerAboutSite {
+  text-align: center;
+  padding-top: 2%;
+  flex: 1;
+.about-content{
+    color: #000000;
+    background-color: #ffffffb5;
+    padding: 10px;
+    border-radius: 3%;
+    font-size: 20px;
+    z-index: 100;
+}
+
+.lear-courses{
+     color: #000000;
+    background-color: #ffffffb5;
+    font-size: 24px;
+    max-width: 350px;
+    margin-left: 34%;
+}
+
+.free-courses {
+  background: #000000;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.free-courses a {
+  text-decoration: none;
+  color: aquamarine;
+  display: block;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.free-courses a:hover {
+  background-color: aquamarine;
+  color: #ffffff;
+}
+
+
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .accordion {
+    margin-bottom: 20px;
+
+    .accordion-item {
+      margin-bottom: 10px;
+
+      .accordion-button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        text-align: left;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #2980b9;
+        }
+      }
+
+      .accordion-body {
+        background-color: #f0f0f0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  //   .carousel {
+  //     margin-bottom: 20px;
+
+  //     .carousel-inner {
+  //       display: flex;
+  //       justify-content: center;
+
+  //       .carousel-item {
+  //         text-align: center;
+
+  //         img {
+  //           width: 100%;
+  //           max-width: 500px;
+  //           border-radius: 4px;
+  //         }
+  //       }
+  //     }
+  //   }
+
+  .collapse-horizontal {
+    margin-bottom: 20px;
+
+    .btn-primary {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 10px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #2980b9;
+      }
+    }
+
+    .card {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 10px;
+    }
+  }
+}

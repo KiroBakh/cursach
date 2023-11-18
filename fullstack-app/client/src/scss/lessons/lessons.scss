@@ -1,0 +1,141 @@
+* {
+  transition: all 0.1s ease-in-out;
+}
+
+.lesson__content {
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: left;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.head-leson {
+  &__title {
+    margin: 30px 0 8px 15px;
+  }
+}
+.hr-lesson {
+  min-width: 100%;
+  height: 4px;
+}
+
+.lesson__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.container-lesson {
+  max-width: 98%;
+  min-height: 60vh;
+  margin: 3% auto;
+  margin-top: 0;
+  border: 1px solid;
+  padding: 5%;
+  border-radius: 2%;
+  text-align: center;
+  background-color: #8080802e;
+
+  .zui-pager {
+    position: absolute;
+    top: 115px;
+    left: 8%;
+    margin: 0 0 5px 5%;
+
+    .btn-group {
+      .btn {
+        margin: 0;
+        padding: 0.5em 1em;
+        border: 0;
+        font-size: 20px;
+        font-weight: 400;
+        background-color: transparent;
+        box-shadow: inset 0px -2px 0px 0px #bbb;
+        color: #bbb;
+        width: 230px;
+        height: 70px;
+
+        &:hover {
+          box-shadow: inset 0px -4px 0px 0px #bbb;
+        }
+      }
+
+      .current {
+        box-shadow: inset 0px -4px 0px 0px #739600;
+        color: #739600;
+        font-weight: bold;
+
+        &:hover {
+          box-shadow: inset 0px -4px 0px 0px #739600;
+          cursor: default;
+        }
+      }
+    }
+
+    .btn[disabled] {
+      box-shadow: inset 0px -2px 0px 0px #e6e6e6;
+      color: #e6e6e6;
+
+      &:hover {
+        box-shadow: inset 0px -2px 0px 0px #e6e6e6;
+        cursor: default;
+      }
+    }
+
+    .i-chevron-left,
+    .i-chevron-right {
+      margin: 40px;
+      border-style: solid;
+      border-color: #3a3a3a;
+      width: 10px;
+      height: 10px;
+      display: block;
+      cursor: pointer;
+    }
+    .i-chevron-left {
+      border-width: 1px 0 0 1px;
+      transform: rotate(-45deg);
+    }
+    .i-chevron-right {
+      border-width: 1px 1px 0 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  .i-caret-down {
+    border-width: 3px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 18px;
+    right: 3px;
+  }
+
+  .small {
+    .btn {
+      position: relative;
+      box-shadow: 0 0 0 transparent !important;
+      padding-right: 20px !important;
+      padding-left: 5px !important;
+    }
+
+    span {
+      &:nth-of-type(1) {
+        font-weight: bold;
+        color: #739600;
+      }
+      &:nth-of-type(2) {
+        margin: 0 5px;
+      }
+    }
+    .select-overlay {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+}

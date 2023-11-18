@@ -1,0 +1,162 @@
+$primaryColor: #007e32eb;
+$secondaryColor: #db9523eb;
+$accentColor: #7e6700eb;
+
+.main {
+  background-image: url("/public/img/backPhone.jpg");
+  min-height: 85vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  .container {
+    text-align: center;
+    padding-top: 2%;
+    flex: 1;
+
+    .home-page {
+      &__jumbotron {
+        background-color: #ceffe7ad;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+
+      &__title,
+      &__lead,
+      &__description {
+        position: relative;
+        overflow: hidden;
+        font-weight: 550;
+        animation: colorTransition 5s infinite;
+      }
+
+      &__title:before,
+      &__lead:before,
+      &__description:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: linear-gradient(
+          to bottom,
+          $primaryColor 0%,
+          $secondaryColor 50%,
+          $accentColor 100%
+        );
+        animation: slide 5s linear infinite;
+      }
+
+      @keyframes colorTransition {
+        0%,
+        100% {
+          color: $primaryColor;
+        }
+        50% {
+          color: $secondaryColor;
+        }
+      }
+
+      @keyframes slide {
+        0%,
+        100% {
+          transform: translateY(-100%);
+        }
+        50% {
+          transform: translateY(100%);
+        }
+      }
+
+      &__hr {
+        border-top: 2px solid #00a854;
+      }
+
+      &__description {
+        margin-bottom: 20px;
+        transition: color 0.5s ease-in-out;
+      }
+
+      &__btn {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+
+      &__column {
+        flex: 0 0 30%;
+        font-size: 18px;
+        border: 1px solid;
+        padding: 10px;
+        background-color: #e9c793a7;
+        margin-left: 7px;
+        &-description {
+          color: #363d44;
+          padding: 5px;
+        }
+      }
+
+      &__subtitle {
+        color: #007bff;
+        font-size: 20px;
+      }
+
+      &__btn-more {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        margin-top: 10px;
+        &:hover {
+          background-color: #edc98f;
+          color: #000;
+        }
+      }
+    }
+    .btnC {
+      text-decoration: none;
+      color: #003803;
+      display: inline-block;
+      position: relative;
+      padding: 15px 30px;
+      border: 2px solid;
+      border-image: linear-gradient(180deg, #48ff00, #edc500, #09ff78, #c0d500);
+      border-image-slice: 1;
+      margin: 10px 20px;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      overflow: hidden;
+      letter-spacing: 2px;
+      transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 0;
+        width: 100%;
+        z-index: -1;
+        color: white;
+        background: linear-gradient(180deg, #48ff00, #edc500, #09ff78, #c0d500);
+        transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0);
+        transform: scale(1.2);
+      }
+      &:hover:before {
+        bottom: 0%;
+        top: auto;
+        height: 100%;
+      }
+    }
+    .row {
+      margin-left: 100px;
+    }
+  }
+}

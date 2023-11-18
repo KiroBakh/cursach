@@ -1,0 +1,32 @@
+.header {
+  min-height: 60px;
+  & .logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  & a {
+    color: #d7ffc4;
+    font-size: 20px;
+    &:hover {
+      color: #6ddd17;
+    }
+  }
+  .nav-link.active {
+    color: #60fc6b;
+    border-bottom: 2px solid #6ddd17;
+  }
+
+  .bg a:hover {
+    background-color: #d5ffb6;
+    color: black;
+  }
+  .btnAuth {
+    padding: 0 20px 0 40px;
+  }
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0rem;
+  align-items: normal;
+}
